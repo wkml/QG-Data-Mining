@@ -163,6 +163,6 @@ if __name__ == '__main__':
             doubanTop = pd.DataFrame(doubanTop, index=range(1, len(doubanTop) + 1))
             doubanTop.insert(0, 'top', range(1, len(doubanTop) + 1))
             df_to_mysql('douban', 'top_info', doubanTop)
-            doubanTop.to_csv('C:/Users/wkml996/Desktop/douban/douban.csv', encoding='utf-8-sig')
+            doubanTop.to_csv('../douban.csv', encoding='utf-8-sig')
     except Exception as e:
         logging.exception(e)
